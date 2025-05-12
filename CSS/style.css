@@ -59,6 +59,10 @@ h1 {
   padding: 0 15px;
 }
 
+.logo-dev {
+  width: 300px;
+}
+
 .me {
   box-shadow: var(--box-shadow);
   border-radius: 50%;
@@ -66,6 +70,7 @@ h1 {
   width: 450px; /* Adjust width as needed */
   height: 450px; /* Adjust height as needed */
   object-fit: cover;
+  /* border: #5b5353 5px solid; */
 }
 
 .hero {
@@ -105,9 +110,9 @@ nav a:focus {
   font-size: 14px;
 }
 
-.brand-logo {
+/* .brand-logo {
   width: 3px;
-}
+} */
 
 .brand {
   margin-left: 7px;
@@ -174,6 +179,16 @@ nav a:focus {
   grid-gap: 20px;
 }
 
+.works .card-text {
+  display: none;
+}
+
+.works a {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
 .card {
   background-color: var(--card-bg);
   color: var(--card-text-color);
@@ -181,19 +196,47 @@ nav a:focus {
   border-radius: 5px;
   box-shadow: var(--box-shadow);
   transition: var(--transition);
+  position: relative;
+  z-index: 0;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.card:nth-child(odd):hover {
-  transform: var(--card-rotation-plus);
+.card h2 {
+  text-align: center;
 }
 
-.card:nth-child(even):hover {
-  transform: var(--card-rotation-minus);
+.card.card-1 {
+  background-image: url("../img/Pokemon_1.png"); /* Adjusted path */
 }
+
+.card.card-2 {
+  background-image: url("../img/myFlix.png");
+  color: #333; /* Adjusted path */
+}
+
+.card.card-3 {
+  background-image: url("../img/MeetUp_2.png");
+  color: #ffffff;
+}
+.card.card-4 {
+  background-image: url("../img/MeetUp_2.png");
+}
+
+/* .card.card-3 h2 {
+  display: hidden;
+  position: fixed;
+} */
 
 .card .btn-grid {
   font-size: 14px;
   margin: 0 0;
+  margin-top: 6px;
 }
 
 .main {
@@ -243,6 +286,11 @@ nav a:focus {
   margin: 10px auto;
   border: none;
   font-size: 18px;
+}
+
+.pokemon {
+  background-image: url(./img/me.png);
+  background-size: cover;
 }
 
 svg {
@@ -303,6 +351,10 @@ footer {
   /* height: 50px; */
   background-color: #f4f4f4; /* A lighter, more neutral background color for better contrast */
 }
+
+/* .brand-favicon {
+  width: ;
+} */
 
 footer a img,
 footer img {
