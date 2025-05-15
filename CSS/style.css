@@ -38,8 +38,8 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #49e0e6; /* Adjust background color for visibility */
-  z-index: 1000; /* Ensure it stays above other elements */
+  background-color: #49e0e6;
+  z-index: 1000;
   padding: 10px 0;
 }
 
@@ -67,14 +67,12 @@ h1 {
   box-shadow: var(--box-shadow);
   border-radius: 50%;
   overflow: hidden;
-  width: 450px; /* Adjust width as needed */
-  height: 450px; /* Adjust height as needed */
+  width: 450px;
+  height: 450px;
   object-fit: cover;
-  /* border: #5b5353 5px solid; */
 }
 
 .hero {
-  /* max-width: 70%; */
   padding: 0 100px;
   display: flex;
   justify-content: space-evenly;
@@ -109,10 +107,6 @@ nav a:focus {
 .btn a {
   font-size: 14px;
 }
-
-/* .brand-logo {
-  width: 3px;
-} */
 
 .brand {
   margin-left: 7px;
@@ -207,6 +201,11 @@ nav a:focus {
   background-repeat: no-repeat;
 }
 
+.card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
 .card h2 {
   text-align: center;
 }
@@ -227,11 +226,9 @@ nav a:focus {
 .card.card-4 {
   background-image: url("../img/MeetUp_2.png");
 }
-
-/* .card.card-3 h2 {
-  display: hidden;
-  position: fixed;
-} */
+.card.card-5 {
+  background-image: url("../img/MyFlixAngularHome2.png");
+}
 
 .card .btn-grid {
   font-size: 14px;
